@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="retro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dima404 — Дмитрий, Оренбург</title>
+<meta name="description" content="Личный сайт Дмитрия (Dima404): лор, музыка, игры, аниме и фильмы, увлечения, железо и соцсети.">
+<meta name="theme-color" content="#3b82f6">
+<meta property="og:title" content="Dima404 — Дмитрий">
+<meta property="og:description" content="Лор, музыка, игры, кино, железо и соцсети одного сисадмина из Оренбурга.">
+<meta property="og:type" content="profile">
+<meta property="og:image" content="assets/img/avatar.webp">
+<link rel="icon" href="assets/img/avatar.webp">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <div class="brand">Dima<span>404</span></div>
+    <div class="nav-links">
+      <a href="#lore">Лор</a>
+      <a href="#music">Музыка</a>
+      <a href="#games">Игры</a>
+      <a href="#watch">Кино</a>
+      <a href="#hobbies">Хобби</a>
+      <a href="#devices">Железо</a>
+      <a href="#socials">Соцсети</a>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="hero-card">
+      <img class="avatar" src="assets/img/avatar.webp" alt="Аватар Dima404">
+      <div>
+        <h1><span id="hero-name">Дмитрий</span> · <span id="hero-nick">Dima404</span>
+          <small>18 лет · <span id="hero-city">Оренбург</span> · родился <span id="hero-born">14.05.2008</span></small>
+        </h1>
+        <p class="lead" id="hero-tagline"></p>
+        <p class="lead" id="hero-about" style="font-size:14.5px;color:var(--muted)"></p>
+        <div class="status">
+          <span class="chip"><span class="dot"></span> открыт к общению</span>
+          <span class="chip">🖥 сисадмин в процессе</span>
+          <span class="chip">🐾 furry</span>
+        </div>
+        <div class="status" id="now" style="margin-top:8px"></div>
+        <div class="stats">
+          <div class="stat"><b id="stat-age">18</b><span>лет</span></div>
+          <div class="stat"><b id="stat-music">0</b><span>треков</span></div>
+          <div class="stat"><b id="stat-watch">0</b><span>просмотрено</span></div>
+          <div class="stat"><b id="stat-games">0</b><span>игр в Steam</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ЛОР -->
+  <section id="lore">
+    <div class="sec-head">
+      <span class="num">01</span><h2>Лор</h2>
+      <p>как я дошёл до жизни такой</p>
+    </div>
+    <div class="card"><div class="timeline" id="timeline"></div></div>
+  </section>
+
+  <!-- МУЗЫКА -->
+  <section id="music">
+    <div class="sec-head">
+      <span class="num">02</span><h2>Музыка</h2>
+      <p>плейлист из YouTube — от hardstyle до breakcore</p>
+    </div>
+    <div class="filters">
+      <input id="music-search" type="search" placeholder="Поиск по треку или исполнителю…">
+      <span class="chip" id="music-count"></span>
+    </div>
+    <div class="filters" id="music-filters"></div>
+    <div class="tracks" id="tracks"></div>
+  </section>
+
+  <!-- ИГРЫ -->
+  <section id="games">
+    <div class="sec-head">
+      <span class="num">03</span><h2>Игры</h2>
+      <p>два Steam-аккаунта: часы, библиотека, любимое</p>
+    </div>
+    <div class="grid g2" id="games-grid"></div>
+  </section>
+
+  <!-- КИНО И АНИМЕ -->
+  <section id="watch">
+    <div class="sec-head">
+      <span class="num">04</span><h2>Фильмы и аниме</h2>
+      <p>история просмотров, выгруженная из HDrezka</p>
+    </div>
+    <div class="filters">
+      <input id="watch-search" type="search" placeholder="Название фильма, сериала или аниме…">
+      <span class="chip" id="watch-count"></span>
+    </div>
+    <div class="filters" id="watch-filters"></div>
+    <div class="grid g2" id="watch-grid"></div>
+  </section>
+
+  <!-- ХОББИ -->
+  <section id="hobbies">
+    <div class="sec-head">
+      <span class="num">05</span><h2>Увлечения и хобби</h2>
+      <p>чем занят, когда не занят ничем</p>
+    </div>
+    <div class="grid g3" id="hobbies-grid"></div>
+  </section>
+
+  <!-- ЖЕЛЕЗО -->
+  <section id="devices">
+    <div class="sec-head">
+      <span class="num">06</span><h2>Железо и девайсы</h2>
+      <p>характеристики сняты прямо с ноутбука</p>
+    </div>
+    <div class="grid g2" id="devices-grid"></div>
+    <div class="card" style="margin-top:22px">
+      <h3>Коротко о себе</h3>
+      <ul class="specs" id="facts"></ul>
+    </div>
+  </section>
+
+  <!-- СОЦСЕТИ -->
+  <section id="socials">
+    <div class="sec-head">
+      <span class="num">07</span><h2>Соцсети</h2>
+      <p>писать можно в любую</p>
+    </div>
+    <div class="grid g3" id="socials-list"></div>
+    <p style="font-size:12px;color:var(--muted);margin-top:14px">
+      * Instagram принадлежит Meta, признанной в РФ экстремистской организацией.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="year"></span> Dima404 · собрано вручную, без конструкторов</div>
+    <div>Нажми <b>↑↑↓↓←→←→BA</b> — если знаешь, зачем.</div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/js/app.js?v=5"></script>
+</body>
+</html>
